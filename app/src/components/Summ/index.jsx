@@ -1,4 +1,5 @@
 import React from 'react'
+import style from './style.module.css'
 
 export default function Summ({box}) {
 
@@ -6,11 +7,11 @@ export default function Summ({box}) {
     const summCount = box.reduce((ac, {count}) => ac + count, 0);
 
   return (
-    <div>
-        <p>
+    <div className={style.summ}>
+        <p className={style.summPrice}>
             Summ-price: {summPrice}
         </p>
-        <p>
+        <p className={style.summCount}>
             Summ-count: {summCount}
         </p>
     </div>

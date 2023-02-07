@@ -10,8 +10,8 @@ export default function productsInBox({id, title, price, count, addingCount, kil
         <p>{price}</p>
         <p>{count}</p>
         <div>
-          <button onClick={()=>addingCount(id)}>+</button>
-          <button onClick={()=>killCount(id)}>-</button>
+          <button className= {style.btnIncr} onClick={()=>addingCount(id)}>+</button>
+          <button className= {style.btnDecr}onClick={()=>killCount(id)}>-</button>
         </div>
     </div>
   )
